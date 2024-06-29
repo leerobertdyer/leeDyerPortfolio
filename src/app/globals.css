@@ -4,5 +4,11 @@
 
 html {
   background-color: #242424;
-  color: #fde8c5
+  color: #fde8c5;
+  transition: all .5s;
+}
+
+html * {
+  color: inherit;
+  transition: inherit;
 }

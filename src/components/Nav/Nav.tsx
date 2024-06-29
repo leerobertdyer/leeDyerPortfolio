@@ -9,8 +9,8 @@ type PropsDefinition = {
 };
 
 export default function Nav({ links }: PropsDefinition) {
-  const linkClass = "hover:text-blue-700";
-  const activeLinkClass = "text-blue-700";
+  const linkClass = "hover:text-leePink-light hover:transform hover:scale-110";
+  const activeLinkClass = "text-leePink-dark";
   const path = usePathname();
 
   useEffect(() => {
@@ -30,10 +30,12 @@ export default function Nav({ links }: PropsDefinition) {
           {link}
         </Link>
       ))}
-      <a href="https://www.github.com/leerobertdyer" target="_blank">
+      <a href="https://www.github.com/leerobertdyer" target="_blank"
+      className={linkClass}>
         GitHub
       </a>
-      <a href="https://www.linkedin.com/in/leerobertdyer/" target="_blank">
+      <a href="https://www.linkedin.com/in/leerobertdyer/" target="_blank"
+      className={linkClass}>
         LinkedIn
       </a>
     </div>

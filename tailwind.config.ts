@@ -9,9 +9,48 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "leeBlack-light": "#333333",
-        "leeBlack": "#242424",
-        "leeBlack-dark": "#1a1a1a",
+        leeBlack: {
+          light: "#333333",
+          base: "#242424",
+          dark: "#1a1a1a",
+        },
+        leeWhite: {
+          light: "#fde8c5",
+          base: "#f9d8a7",
+          dark: "#ffce85",
+        },
+        leePink: {
+          lighter: "#fac3e3",
+          light: "#eda6d0",
+          base: "#e381ba",
+          dark: "#e0389a",
+        },
+      },
+      animation: {
+        "slide-in-right": "slide-in-right 0.5s ease-out",
+        "slide-in-right-slower": "slide-in-right 1.5s ease-out",
+        "slide-in-right-slowest": "slide-in-right 2s ease-in-out",
+        "fade-in-slowest": "fade-in 3.5s ease-out",
+      },
+      keyframes: {
+        "slide-in-right": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+        "fade-in": {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
