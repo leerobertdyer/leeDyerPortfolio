@@ -6,7 +6,8 @@ type Project = {
   name: string;
   description: string;
   image: string;
-  github?: string;
+  github: string | undefined;
+  id: string
 };
 
 export default function Project({
@@ -15,9 +16,10 @@ export default function Project({
   description,
   image,
   github,
+  id
 }: Project) {
   return (
-    <div className="mt-2">
+    <div className="mt-2" id={id}>
       <h1 className="w-full bg-leeWhite-light text-leeBlack-dark py-2 text-xl text-center">
         {name}
       </h1>
