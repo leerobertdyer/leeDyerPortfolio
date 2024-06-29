@@ -42,7 +42,10 @@ export default function Project({
           GitHub Repo
         </a>
       )}
-      <div className="overflow-hidden rounded-sm w-[30rem] h-[30rem] m-auto border-2 border-white">
+      <div className="overflow-hidden rounded-sm 
+      w-[20rem] h-[20rem]
+      sm:w-[30rem] sm:h-[30rem] 
+      m-auto border-2 border-white">
         <a href={link} target="_blank">
           <Image
             src={image}
