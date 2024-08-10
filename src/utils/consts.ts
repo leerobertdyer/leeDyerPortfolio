@@ -80,7 +80,7 @@ const auntVicki = {
 };
 
 const javaMeals = {
-  link: "https://vercel.com/leerobertdyers-projects/java-meals-frontend",
+  link: "https://java-meals-frontend.vercel.app/",
   href: "/projects#java-meals",
   label: "Java Meals",
   id: "java-meals",
@@ -134,8 +134,13 @@ export const SKILLS = [
   },
   {
     name: "Python",
-    description: "I am most comfortable using python with Flask.",
+    description: "I am quite comfortable with the fundamentals of Python, and have experience with Flask.",
     links: [{ href: "/projects#ashevenue", label: "Ashevenue" }],
+  },
+  {
+    name: "Java",
+    description: "I have a basic understanding of Java and OOP principles, and built a basic CRUD app to test my knowledge.",
+    links: [{ href: "/projects#java-meals", label: "Java Meals" }]
   },
   {
     name: "TypeScript",
