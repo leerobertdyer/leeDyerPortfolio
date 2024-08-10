@@ -79,9 +79,21 @@ const auntVicki = {
   github: 'https://github.com/leerobertdyer/auntvicki'
 };
 
+const javaMeals = {
+  link: "https://vercel.com/leerobertdyers-projects/java-meals-frontend",
+  href: "/projects#java-meals",
+  label: "Java Meals",
+  id: "java-meals",
+  description:
+   "A Java Spring-Boot app with basic CRUD API deployed on AWS Elastic Beanstalk with a React/TypeScript frontend.",
+   image: "/images/javaMeals.png",
+   github: "https://github.com/leerobertdyer/javaMeals_Frontend"
+}
+
 export const allProjects = [
   agendaKeeper,
   prysm,
+  javaMeals,
   tinySun,
   wabs,
   ashevenue,
