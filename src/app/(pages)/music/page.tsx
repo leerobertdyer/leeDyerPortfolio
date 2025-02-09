@@ -4,7 +4,7 @@ export default function Music() {
     return (
         <div className="flex flex-col md:flex-row justify-evenly items-center mt-4 gap-4 flex-wrap">
 
-            <LinkPhoto src="/images/auntvickiTristan.png" alt="Aunt Vicki Band" 
+            <LinkPhoto src="/images/auntVickiTristan.png" alt="Aunt Vicki Band" 
                 text="Aunt Vicki" linkto="https://www.auntvicki.rocks/" target="blank"/>
 
             <LinkPhoto src="/images/wifeIslandLake.jpg" alt="Wife Island Duo" 
