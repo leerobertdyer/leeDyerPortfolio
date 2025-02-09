@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 type PropsDefinition = {
-  links: string[];
+  links: {name: string, path: string}[];
 };
 
 export default function Nav({ links }: PropsDefinition) {
@@ -20,24 +20,28 @@ export default function Nav({ links }: PropsDefinition) {
   return (
     <div className="border-b-2 py-4 flex justify-evenly">
       {links.map((link) => (
-        <Link 
-        className={`${
-          path === (link.toLowerCase() === "home" ? "/" : `/${link.toLowerCase()}`)
-            ? activeLinkClass
-            : linkClass
-        }`}
-        href={`/${link.toLowerCase()}`} key={link}>
-          {link}
-        </Link>
+        link.path === path ? null : (
+          <Link
+            className={`${path === link.path
+                ? activeLinkClass
+                : linkClass
+              }`}
+            href={link.path} key={link.path}>
+            {link.name}
+          </Link>
+        )
       ))}
-      <a href="https://www.github.com/leerobertdyer" target="_blank"
-      className={linkClass}>
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/leerobertdyer/" target="_blank"
-      className={linkClass}>
-        LinkedIn
-      </a>
+      {path === "coding" && <>
+        <a href="https://www.github.com/leerobertdyer" target="_blank"
+          className={linkClass}>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/leerobertdyer/" target="_blank"
+          className={linkClass}>
+          LinkedIn
+        </a>
+      </>
+      }
     </div>
   );
 }

@@ -1,4 +1,17 @@
-export const ROUTES = ["Home", "Projects", "Contact"];
+export const ROUTES = {
+  "coding": [
+    { name: "Home", path: "/" },
+    { name: "Projects", path: "/coding/projects" },
+    { name: "Contact", path: "/contact" },
+    { name: "Coding", path: "/coding" }
+  ],
+  "music": [
+    { name: "Home", path: '/' },
+    // { name: "Tiny Sun", path: "/music/tinysun" },
+    // { name: "Wife Island", path: '/music/wifeisland' },
+    // { name: "Aunt Vicki", path: "/music/auntvicki" },
+  ]
+};
 
 const prysm = {
   link: "https://demo.prysmxr.com/",
@@ -35,7 +48,7 @@ const wabs = {
   label: "Write A Bad Song",
   description: "A React/Next.js/TypeScript songwriting and motivational app",
   image: "/images/wabs.png",
-    github: 'https://github.com/leerobertdyer/wabsv2'
+  github: 'https://github.com/leerobertdyer/wabsv2'
 };
 const wifeIsland = {
   link: "https://www.wifeislandduo.com",
@@ -85,9 +98,9 @@ const javaMeals = {
   label: "Java Meals",
   id: "java-meals",
   description:
-   "A Java Spring-Boot app with basic CRUD API deployed on AWS Elastic Beanstalk with a React/TypeScript frontend.",
-   image: "/images/javaMeals.png",
-   github: "https://github.com/leerobertdyer/javaMeals_Frontend"
+    "A Java Spring-Boot app with basic CRUD API deployed on AWS Elastic Beanstalk with a React/TypeScript frontend.",
+  image: "/images/javaMeals.png",
+  github: "https://github.com/leerobertdyer/javaMeals_Frontend"
 }
 
 export const allProjects = [

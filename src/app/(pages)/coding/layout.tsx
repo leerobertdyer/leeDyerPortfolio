@@ -8,7 +8,7 @@ type PropsDefinition = {
 export default function Layout({ children }: PropsDefinition) {
     return (
         <>
-            <Nav links={ROUTES} />
+            <Nav links={ROUTES.coding} />
             {children}
         </>
     )

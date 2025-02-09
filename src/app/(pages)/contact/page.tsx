@@ -37,6 +37,7 @@ export default function Contact() {
 
   return (
     <>
+    <Link className="absolute left-0 right-0 top-0 text-center pt-2" href="/">Back</Link>
       <div className="flex justify-center w-screen h-fit py-[3rem]">
         {success ? (
           <div
