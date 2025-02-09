@@ -14,7 +14,7 @@ export default function Main() {
           w-full mt-8
           flex flex-col md:flex-row 
           items-center justify-evenly gap-4">
-        <LinkPhoto src="/images/leeStage1.jpg" alt="Lee Dyer Music photo" text="Music" linkto="/music" />
+        <LinkPhoto src="/images/leeStage1.png" alt="Lee Dyer Music photo" text="Music" linkto="/music" />
         <LinkPhoto src="/images/profilePicSmaller.jpg" alt="Lee Dyer Coding photo" text="Coding" linkto="/coding" />
 
       </div>
