@@ -12,6 +12,7 @@ const nextConfig = {
     },
     images: {
         domains: ['www.leedyer.com'],
+        unoptimized: true, // Disable optimization for static files
     },
 };
 
