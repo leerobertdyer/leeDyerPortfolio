@@ -9,7 +9,10 @@ const nextConfig = {
                 permanent: true
             }
         ]
-    }
+    },
+    images: {
+        domains: ['www.leedyer.com'],
+    },
 };
 
 export default nextConfig;
